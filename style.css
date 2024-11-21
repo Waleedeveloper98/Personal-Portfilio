@@ -57,12 +57,12 @@
     color: transparent;
     -webkit-text-stroke: 1px rgb(255, 255, 255);
 }
-.web-experience-text::before{
+/* .web-experience-text::before{
     content: "Web Experiences";
     position: absolute;
     color: transparent;
     -webkit-text-stroke: 1px rgba(2, 96, 99, 0.3);
-}
+} */
 .line .center-text{
     position: relative;
     color: transparent;

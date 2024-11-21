@@ -710,6 +710,10 @@ video {
   z-index: 20;
 }
 
+.z-\[999999999999999\] {
+  z-index: 999999999999999;
+}
+
 .z-\[9999999999\] {
   z-index: 9999999999;
 }
@@ -728,46 +732,6 @@ video {
 
 .z-\[99\] {
   z-index: 99;
-}
-
-.z-\[9\] {
-  z-index: 9;
-}
-
-.z-\[9999999999999999999999999999999999999999\] {
-  z-index: 9999999999999999999999999999999999999999;
-}
-
-.z-\[999999999999999999999999999999999999999\] {
-  z-index: 999999999999999999999999999999999999999;
-}
-
-.z-\[99999999999999999999999999999999999\] {
-  z-index: 99999999999999999999999999999999999;
-}
-
-.z-\[999999999999999999\] {
-  z-index: 999999999999999999;
-}
-
-.z-\[9999999999999999999999999999999999999999999999999999999\] {
-  z-index: 9999999999999999999999999999999999999999999999999999999;
-}
-
-.z-\[99999\] {
-  z-index: 99999;
-}
-
-.z-\[99999999\] {
-  z-index: 99999999;
-}
-
-.z-\[99999999999999999999999\] {
-  z-index: 99999999999999999999999;
-}
-
-.z-\[999999999999999\] {
-  z-index: 999999999999999;
 }
 
 .mx-auto {
@@ -1140,6 +1104,10 @@ video {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
 }
 
 .whitespace-nowrap {
@@ -1718,12 +1686,12 @@ video {
   -webkit-text-stroke: 1px rgb(255, 255, 255);
 }
 
-.web-experience-text::before{
-  content: "Web Experiences";
-  position: absolute;
-  color: transparent;
-  -webkit-text-stroke: 1px rgba(2, 96, 99, 0.3);
-}
+/* .web-experience-text::before{
+    content: "Web Experiences";
+    position: absolute;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(2, 96, 99, 0.3);
+} */
 
 .line .center-text{
   position: relative;
@@ -2038,6 +2006,10 @@ video {
     display: none;
   }
 
+  .md\:h-1\/2 {
+    height: 50%;
+  }
+
   .md\:h-\[70vh\] {
     height: 70vh;
   }
@@ -2062,8 +2034,12 @@ video {
     width: 15rem;
   }
 
-  .md\:w-\[40\%\] {
-    width: 40%;
+  .md\:w-\[100\%\] {
+    width: 100%;
+  }
+
+  .md\:w-\[45\%\] {
+    width: 45%;
   }
 
   .md\:w-\[450px\] {
@@ -2072,10 +2048,6 @@ video {
 
   .md\:w-\[55\%\] {
     width: 55%;
-  }
-
-  .md\:w-\[60\%\] {
-    width: 60%;
   }
 
   .md\:w-\[80px\] {
@@ -2088,10 +2060,6 @@ video {
 
   .md\:w-\[90px\] {
     width: 90px;
-  }
-
-  .md\:flex-row {
-    flex-direction: row;
   }
 
   .md\:gap-10 {
@@ -2301,6 +2269,10 @@ video {
 
   .lg\:gap-4 {
     gap: 1rem;
+  }
+
+  .lg\:gap-8 {
+    gap: 2rem;
   }
 
   .lg\:gap-\[4\%\] {
