@@ -454,6 +454,7 @@ pages.forEach((page) => {
     let testimonial = page.querySelector(".testimonial-container");
     let inputAnim = page.querySelectorAll(".input-anim ")
     let work1 = page.querySelector(".work1");
+    let work1point2 = page.querySelector(".work1point2")
     let work2 = page.querySelector(".work2");
     let work3 = page.querySelector(".work3");
     let work4 = page.querySelector(".work4");
@@ -565,18 +566,26 @@ ScrollTrigger.matchMedia({
           scrollTrigger: { ...worklineOneScrollTrigger },
         });
       }
-      if (work2) {
-        gsap.from(work2, {
+      if (work1point2) {
+        gsap.from(work1point2, {
           opacity: 0,
           x: "100%",
           duration: 2,
           scrollTrigger: { ...worklineOneScrollTrigger },
         });
       }
+      if (work2) {
+        gsap.from(work2, {
+          opacity: 0,
+          x: "-100%",
+          duration: 2,
+          scrollTrigger: { ...worklineTwoScrollTrigger },
+        });
+      }
       if (work3) {
         gsap.from(work3, {
           opacity: 0,
-          x: "-100%",
+          x: "100%",
           duration: 2,
           scrollTrigger: { ...worklineTwoScrollTrigger },
         });
@@ -584,15 +593,15 @@ ScrollTrigger.matchMedia({
       if (work4) {
         gsap.from(work4, {
           opacity: 0,
-          x: "100%",
+          x: "-100%",
           duration: 2,
-          scrollTrigger: { ...worklineTwoScrollTrigger },
+          scrollTrigger: { ...worklineThreeScrollTrigger },
         });
       }
       if (work5) {
         gsap.from(work5, {
           opacity: 0,
-          x: "-100%",
+          x: "100%",
           duration: 2,
           scrollTrigger: { ...worklineThreeScrollTrigger },
         });
